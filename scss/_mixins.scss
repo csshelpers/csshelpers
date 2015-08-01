@@ -1,0 +1,15 @@
+@mixin v-spacer($margin) {
+  margin-top: $margin;
+  margin-bottom: $margin;
+}
+
+@mixin h-spacer($margin) {
+  margin-left: $margin;
+  margin-right: $margin;
+}
+
+@mixin spacer($height) {
+  display: block;
+  width: 100%;
+  height: $height;
+}
