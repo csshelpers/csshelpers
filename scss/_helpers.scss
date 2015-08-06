@@ -1,5 +1,4 @@
 /***** Vertical spacers *****/
-.v-spacer-0{ @include v-spacer(0); }
 .v-spacer-5{ @include v-spacer(5px); }
 .v-spacer-10{ @include v-spacer(10px); }
 .v-spacer-15{ @include v-spacer(15px); }
@@ -7,7 +6,6 @@
 .v-spacer-30{ @include v-spacer(30px); }
 .v-spacer-50{ @include v-spacer(50px); }
 
-.t-spacer-0{ margin-top: 0; }
 .t-spacer-5{ margin-top: 5px; }
 .t-spacer-10{ margin-top: 10px; }
 .t-spacer-15{ margin-top: 15px; }
@@ -15,7 +13,6 @@
 .t-spacer-30{ margin-top: 30px; }
 .t-spacer-50{ margin-top: 50px; }
 
-.b-spacer-0{ margin-bottom: 0; }
 .b-spacer-5{ margin-bottom: 5px; }
 .b-spacer-10{ margin-bottom: 10px; }
 .b-spacer-15{ margin-bottom: 15px; }
@@ -24,7 +21,6 @@
 .b-spacer-50{ margin-bottom: 50px; }
 
 /***** Horizontal spacers *****/
-.h-spacer-0{ @include h-spacer(0); }
 .h-spacer-5{ @include h-spacer(5px); }
 .h-spacer-10{ @include h-spacer(10px); }
 .h-spacer-15{ @include h-spacer(15px); }
@@ -32,7 +28,6 @@
 .h-spacer-30{ @include h-spacer(30px); }
 .h-spacer-50{ @include h-spacer(50px); }
 
-.l-spacer-0{ margin-left: 0; }
 .l-spacer-5{ margin-left: 5px; }
 .l-spacer-10{ margin-left: 10px; }
 .l-spacer-15{ margin-left: 15px; }
@@ -40,7 +35,6 @@
 .l-spacer-30{ margin-left: 30px; }
 .l-spacer-50{ margin-left: 50px; }
 
-.r-spacer-0{ margin-right: 0; }
 .r-spacer-5{ margin-right: 5px; }
 .r-spacer-10{ margin-right: 10px; }
 .r-spacer-15{ margin-right: 15px; }
@@ -55,15 +49,41 @@
 .spacer-20{ @include spacer(20px); }
 .spacer-30{ @include spacer(30px); }
 .spacer-50{ @include spacer(50px); }
+.spacer-100{ @include spacer(50px); }
+
+/***** Resetting *****/
+.no-margin{ margin: 0 !important; }
+.no-padding{ padding: 0 !important; }
+.b-spacer-0{ margin-bottom: 0 !important; }
+.t-spacer-0{ margin-top: 0 !important; }
+.l-spacer-0{ margin-left: 0 !important; }
+.r-spacer-0{ margin-right: 0 !important; }
 
 /***** Vertical alignment *****/
-.v-container {
+.v-align-container {
   display: table;
   width: 100%;
   min-height: 100%;
   height: 100%;
 }
-.v-middle{
-  display: table-cell;
-  vertical-align: middle;
+.v-align-bottom,.v-align-middle,.v-align-top{ display: table-cell; }
+.v-align-bottom{ vertical-align: bottom; }
+.v-align-middle{ vertical-align: bottom; }
+.v-align-top{ vertical-align: top; }
+
+/***** Cursor settings *****/
+.pointer { cursor: pointer; }
+.disable-cursor { pointer-events: none; }
+
+/***** Full screen *****/
+.full-screen, .full-screen-min {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
 }
+.full-screen { height: 100vh; }
+
+/***** Utilities *****/
+.clearfix { clear: both; }
+.hide-absolute{ display: none; }
+.hide { visibility: none; }
