@@ -5,6 +5,7 @@
 .v-spacer-20{ @include v-spacer(20px); }
 .v-spacer-30{ @include v-spacer(30px); }
 .v-spacer-50{ @include v-spacer(50px); }
+.v-spacer-100{ @include v-spacer(100px); }
 
 .t-spacer-5{ margin-top: 5px; }
 .t-spacer-10{ margin-top: 10px; }
@@ -12,6 +13,7 @@
 .t-spacer-20{ margin-top: 20px; }
 .t-spacer-30{ margin-top: 30px; }
 .t-spacer-50{ margin-top: 50px; }
+.t-spacer-100{ margin-top: 100px; }
 
 .b-spacer-5{ margin-bottom: 5px; }
 .b-spacer-10{ margin-bottom: 10px; }
@@ -19,6 +21,7 @@
 .b-spacer-20{ margin-bottom: 20px; }
 .b-spacer-30{ margin-bottom: 30px; }
 .b-spacer-50{ margin-bottom: 50px; }
+.b-spacer-100{ margin-bottom: 100px; }
 
 /***** Horizontal spacers *****/
 .h-spacer-5{ @include h-spacer(5px); }
@@ -27,6 +30,7 @@
 .h-spacer-20{ @include h-spacer(20px); }
 .h-spacer-30{ @include h-spacer(30px); }
 .h-spacer-50{ @include h-spacer(50px); }
+.h-spacer-100{ @include h-spacer(100px); }
 
 .l-spacer-5{ margin-left: 5px; }
 .l-spacer-10{ margin-left: 10px; }
@@ -34,6 +38,7 @@
 .l-spacer-20{ margin-left: 20px; }
 .l-spacer-30{ margin-left: 30px; }
 .l-spacer-50{ margin-left: 50px; }
+.l-spacer-100{ margin-left: 100px; }
 
 .r-spacer-5{ margin-right: 5px; }
 .r-spacer-10{ margin-right: 10px; }
@@ -41,6 +46,7 @@
 .r-spacer-20{ margin-right: 20px; }
 .r-spacer-30{ margin-right: 30px; }
 .r-spacer-50{ margin-right: 50px; }
+.r-spacer-100{ margin-right: 100px; }
 
 /***** Spacer blocks *****/
 .spacer-5{ @include spacer(5px); }
@@ -49,7 +55,7 @@
 .spacer-20{ @include spacer(20px); }
 .spacer-30{ @include spacer(30px); }
 .spacer-50{ @include spacer(50px); }
-.spacer-100{ @include spacer(50px); }
+.spacer-100{ @include spacer(100px); }
 
 /***** Resetting *****/
 .no-margin{ margin: 0 !important; }
@@ -71,10 +77,6 @@
 .v-align-middle{ vertical-align: bottom; }
 .v-align-top{ vertical-align: top; }
 
-/***** Cursor settings *****/
-.pointer { cursor: pointer; }
-.disable-cursor { pointer-events: none; }
-
 /***** Full screen *****/
 .full-screen, .full-screen-min {
   position: relative;
@@ -82,8 +84,3 @@
   min-height: 100%;
 }
 .full-screen { height: 100vh; }
-
-/***** Utilities *****/
-.clearfix { clear: both; }
-.hide-absolute{ display: none; }
-.hide { visibility: none; }

@@ -29,6 +29,10 @@
   margin-top: 50px;
   margin-bottom: 50px; }
 
+.v-spacer-100 {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
 .t-spacer-5 {
   margin-top: 5px; }
 
@@ -47,6 +51,9 @@
 .t-spacer-50 {
   margin-top: 50px; }
 
+.t-spacer-100 {
+  margin-top: 100px; }
+
 .b-spacer-5 {
   margin-bottom: 5px; }
 
@@ -64,6 +71,9 @@
 
 .b-spacer-50 {
   margin-bottom: 50px; }
+
+.b-spacer-100 {
+  margin-bottom: 100px; }
 
 /***** Horizontal spacers *****/
 .h-spacer-5 {
@@ -90,6 +100,10 @@
   margin-left: 50px;
   margin-right: 50px; }
 
+.h-spacer-100 {
+  margin-left: 100px;
+  margin-right: 100px; }
+
 .l-spacer-5 {
   margin-left: 5px; }
 
@@ -107,6 +121,9 @@
 
 .l-spacer-50 {
   margin-left: 50px; }
+
+.l-spacer-100 {
+  margin-left: 100px; }
 
 .r-spacer-5 {
   margin-right: 5px; }
@@ -126,41 +143,37 @@
 .r-spacer-50 {
   margin-right: 50px; }
 
+.r-spacer-100 {
+  margin-right: 100px; }
+
 /***** Spacer blocks *****/
 .spacer-5 {
   display: block;
-  width: 100%;
   height: 5px; }
 
 .spacer-10 {
   display: block;
-  width: 100%;
   height: 10px; }
 
 .spacer-15 {
   display: block;
-  width: 100%;
   height: 15px; }
 
 .spacer-20 {
   display: block;
-  width: 100%;
   height: 20px; }
 
 .spacer-30 {
   display: block;
-  width: 100%;
   height: 30px; }
 
 .spacer-50 {
   display: block;
-  width: 100%;
   height: 50px; }
 
 .spacer-100 {
   display: block;
-  width: 100%;
-  height: 50px; }
+  height: 100px; }
 
 /***** Resetting *****/
 .no-margin {
@@ -200,13 +213,6 @@
 .v-align-top {
   vertical-align: top; }
 
-/***** Cursor settings *****/
-.pointer {
-  cursor: pointer; }
-
-.disable-cursor {
-  pointer-events: none; }
-
 /***** Full screen *****/
 .full-screen, .full-screen-min {
   position: relative;
@@ -217,13 +223,16 @@
   height: 100vh; }
 
 /***** Utilities *****/
-.clearfix {
-  clear: both; }
-
 .hide-absolute {
   display: none; }
 
 .hide {
   visibility: none; }
+
+.pointer {
+  cursor: pointer; }
+
+.disable-cursor {
+  pointer-events: none; }
 
 /*# sourceMappingURL=helpers.css.map */
