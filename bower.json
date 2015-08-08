@@ -1,0 +1,27 @@
+{
+  "name": "csshelpers",
+  "version": "0.9",
+  "homepage": "www.csshelpers.com",
+  "authors": [
+    "Damian Przygodzki <head@csshelpers.com> (http://www.damianprzygodzki.pl)"
+  ],
+  "description": "Useful and light css library to improve and make Your work easier. Includes class for positioning, vertical aligning and more. Start developing websites with classes you always use.",
+  "main": "helpers.min.css",
+  "keywords": [
+    "css",
+    "helpers",
+    "csshelpers"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csshelpers/csshelpers.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
